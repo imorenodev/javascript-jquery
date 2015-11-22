@@ -9,12 +9,17 @@
 
 //select element by css selector
 
-var el = document.querySelector('li.hot');
-el.className = 'cool';
+// var el = document.querySelector('li.hot');
+// el.className = 'cool';
 
-var els = document.querySelectorAll('li.hot');
+// var els = document.querySelectorAll('li.hot');
 
-els[1].className = 'cool';
+// els[1].className = 'cool';
 
-var el2 = document.getElementById('four');
-el2.className = 'hot';
+// var el2 = document.getElementById('four');
+// el2.className = 'hot';
+
+var hotItems = document.querySelectorAll('li.hot');
+for (var i = 0; i < hotItems.length; i++) {
+	hotItems[i].className = 'complete';
+}
