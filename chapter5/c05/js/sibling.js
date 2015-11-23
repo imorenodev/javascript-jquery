@@ -13,3 +13,15 @@ var lastChildItem = parentItem.lastChild;
 
 firstChildItem.className = 'cool';
 lastChildItem.className = 'cool';
+
+
+//create new li element with text node child & append new element
+//to the DOM tree as the fifth element in the ul
+
+var newTextNode = document.createTextNode('apple pie');
+var newElNode = document.createElement('li')
+newElNode.appendChild(newTextNode);
+
+var position = document.getElementsByTagName('ul')[0];
+
+position.appendChild(newElNode);
