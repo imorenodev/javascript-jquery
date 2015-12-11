@@ -8,4 +8,6 @@ $('p:contains("look!")').hide();
 
 $('li:nth-child(2)').hide();
 
-$(':hidden').fadeIn(1500);
+$(document).ready(function(){
+	$(':hidden').fadeIn(1500);
+});
