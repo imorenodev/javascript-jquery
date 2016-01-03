@@ -11,3 +11,7 @@ $('li:nth-child(2)').hide();
 $(document).ready(function(){
 	$(':hidden').fadeIn(1500);
 });
+
+$(function(){
+	$('li#one').attr('id','ten');
+})
